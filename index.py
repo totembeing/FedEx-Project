@@ -17,7 +17,9 @@ def determineLocation(lat, dividingLat):
     else:
         return "South Barrie"
     
-def main(address):
+def main():
+    address = input("Enter your address: ")
+
     dividingLat = 44.3787 #Taken upto four decimal points, original value: 44.378714
 
     lat, lon = getCoordinates(address)
@@ -28,5 +30,5 @@ def main(address):
     else: 
         print("Address not found.")
 
-address = "L4N 4V9"
-main(address)
+
+main()
