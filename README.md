@@ -22,4 +22,7 @@ Brief explanation of how geopy works:
 4. The response format depends on the service but generally is provided in JSON or XML format.
 5. Geopy parses the response from the geocoding service and extracts relevant information(latitude and longitude.)
 
+The given program might give a wrong answer when given a street address as an input instead of a postal code, the reason being postal codes are more specific and less ambiguous unlike 
+street address, making it easier for geocoding service to return accurate result.
+
 Note: This is the first step of the project, I will be working on further improvements.
